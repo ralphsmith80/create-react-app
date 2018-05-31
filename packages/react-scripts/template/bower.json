@@ -1,0 +1,6 @@
+{
+  "name": "glu-dependencies",
+  "dependencies": {
+    "glu": "http://psm-centos015.us-bottomline.root.bottomline.com:8081/nexus/service/local/repositories/releases/content/com/bottomline/ui/glu/1.8.45/glu-1.8.45-amd.zip"
+  }
+}
