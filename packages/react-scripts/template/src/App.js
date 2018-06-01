@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import styles from './App.css';
-import Alert from './Alert';
+import Alert from './components/Alert';
 
 class App extends Component {
   render() {

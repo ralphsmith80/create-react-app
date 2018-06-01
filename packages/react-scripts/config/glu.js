@@ -3,7 +3,6 @@
 const path = require('path');
 const fs = require('fs');
 const webpack = require('webpack');
-// const webpackUtils = require('webpack-utils');
 
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
@@ -16,11 +15,11 @@ const alias = {
   backbone: path.resolve(gluVendor, 'backbone/backbone'),
   'backbone.wreqr': path.resolve(
     gluVendor,
-    'backbone.wreqr/lib/backbone.wreqr'
+    'backbone.wreqr/lib/backbone.wreqr.min'
   ),
   'backbone.babysitter': path.resolve(
     gluVendor,
-    'backbone.babysitter/lib/backbone.babysitter'
+    'backbone.babysitter/lib/backbone.babysitter.min'
   ),
   'bootstrap.affix': path.resolve(gluVendor, 'bootstrap/js/affix'),
   'bootstrap.alert': path.resolve(gluVendor, 'bootstrap/js/alert'),
@@ -37,21 +36,24 @@ const alias = {
   'bootstrap.tab': path.resolve(gluVendor, 'bootstrap/js/tab'),
   'bootstrap.tooltip': path.resolve(gluVendor, 'bootstrap/js/tooltip'),
   'bootstrap.transition': path.resolve(gluVendor, 'bootstrap/js/transition'),
-  c3: path.resolve(gluVendor, 'c3/c3'),
-  d3: path.resolve(gluVendor, 'd3/d3'),
-  handlebars: path.resolve(gluVendor, 'handlebars/handlebars'),
-  jquery: path.resolve(gluVendor, 'jquery/dist/jquery'),
-  'jquery-mask': path.resolve(gluVendor, 'jQuery-Mask-Plugin/dist/jquery.mask'),
+  c3: path.resolve(gluVendor, 'c3/c3.min'),
+  d3: path.resolve(gluVendor, 'd3/d3.min'),
+  handlebars: path.resolve(gluVendor, 'handlebars/handlebars.min'),
+  jquery: path.resolve(gluVendor, 'jquery/dist/jquery.min'),
+  'jquery-mask': path.resolve(
+    gluVendor,
+    'jQuery-Mask-Plugin/dist/jquery.mask.min'
+  ),
   jui: path.resolve(gluVendor, 'jquery-ui/ui'),
   marionette: path.resolve(
     gluVendor,
-    'marionette/lib/core/amd/backbone.marionette'
+    'marionette/lib/core/amd/backbone.marionette.min'
   ),
   moment: path.resolve(gluVendor, 'moment/moment'),
-  numeral: path.resolve(gluVendor, 'numeral/numeral'),
+  numeral: path.resolve(gluVendor, 'numeral/min/numeral.min'),
   respond: path.resolve(gluVendor, 'respond/dest/respond.src'),
   rsvp: path.resolve(gluVendor, 'rsvp/rsvp.min'),
-  select2: path.resolve(gluVendor, 'select2/select2'),
+  select2: path.resolve(gluVendor, 'select2/select2.min'),
   'string-replace-loader': path.resolve(
     resolveApp('node_modules/string-replace-loader')
   ),
@@ -173,15 +175,6 @@ const rules = [
     ],
   },
 ];
-// .concat(webpackUtils.overrides.createPathOverrideLoaders(
-//   [
-//     {
-//       path: 'glu/module/appKernel',
-//       replacePath: 'common/overrides/webpack/appKernel',
-//     },
-//   ],
-//   // {glu: glu}
-// ))
 
 const plugins = [
   new webpack.ProvidePlugin({
