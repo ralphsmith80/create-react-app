@@ -6,14 +6,14 @@ import Alert from './components/Alert';
 class App extends Component {
   render() {
     return (
-      <section className={styles.app}>
+      <section className="app">
         <header>
-          <img src={logo} className={styles.logo} alt="logo" />
+          <img src={logo} className="logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
-            className={styles.link}
+            className="link"
             href="https://reactjs.org"
             target="_blank"
             rel="noopener noreferrer"
@@ -21,7 +21,7 @@ class App extends Component {
             Learn React
           </a>
         </header>
-        <Alert className={styles.alert} />
+        <Alert className="alert" />
       </section>
     );
   }
