@@ -3,6 +3,7 @@
 const path = require('path');
 const fs = require('fs');
 const webpack = require('webpack');
+const paths = require('./paths');
 
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
@@ -131,6 +132,7 @@ const rules = [
   },
   {
     test: /\.less$/,
+    include: path.resolve(paths.appSrc, 'index.less'),
     use: [
       require.resolve('style-loader'),
       {
@@ -166,7 +168,6 @@ const rules = [
       {
         loader: require.resolve('less-loader'),
         options: {
-          // relativeUrls: true,
           relativeUrls: false,
           lint: true,
           strictImports: false,
