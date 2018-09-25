@@ -1,6 +1,6 @@
 {
   "name": "@ralphsmith80/react-scripts",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "description": "Configuration and scripts for Create React App.",
   "repository": "ralphsmith80/create-react-app",
   "license": "MIT",
@@ -10,7 +10,13 @@
   "bugs": {
     "url": "https://github.com/ralphsmith80/create-react-app/issues"
   },
-  "files": ["bin", "config", "scripts", "template", "utils"],
+  "files": [
+    "bin",
+    "config",
+    "scripts",
+    "template",
+    "utils"
+  ],
   "bin": {
     "react-scripts": "./bin/react-scripts.js"
   },
@@ -33,7 +39,7 @@
     "eslint-loader": "1.9.0",
     "eslint-plugin-flowtype": "2.39.1",
     "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-jsx-a11y": "5.1.1",
     "eslint-plugin-react": "7.4.0",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.5",
