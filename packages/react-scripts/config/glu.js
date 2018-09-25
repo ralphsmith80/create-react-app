@@ -14,6 +14,10 @@ const gluVendor = resolveApp('bower_components/glu/vendor');
 
 const alias = {
   backbone: path.resolve(gluVendor, 'backbone/backbone'),
+  'backbone.marionette': path.resolve(
+    gluVendor,
+    'marionette/lib/core/amd/backbone.marionette.min'
+  ),
   'backbone.wreqr': path.resolve(
     gluVendor,
     'backbone.wreqr/lib/backbone.wreqr.min'
