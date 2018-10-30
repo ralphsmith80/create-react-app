@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts",
+  "name": "@ralphsmith80/react-scripts",
   "version": "2.1.0",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebook/create-react-app",
+  "repository": "ralphsmith80/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/ralphsmith80/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -40,11 +40,7 @@
     "dotenv-expand": "4.2.0",
     "eslint": "5.6.0",
     "eslint-config-airbnb": "^17.1.0",
-<<<<<<< HEAD
     "eslint-config-react-app": "^3.0.5",
-=======
-    "eslint-config-react-app": "^3.0.3",
->>>>>>> 8a1fb27095228e63b28f3de1d0ae6bd2e5f9f3a7
     "eslint-loader": "2.1.1",
     "eslint-plugin-flowtype": "2.50.1",
     "eslint-plugin-import": "2.14.0",
@@ -86,10 +82,5 @@
   "optionalDependencies": {
     "fsevents": "1.2.4"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
