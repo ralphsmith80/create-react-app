@@ -1,14 +1,14 @@
 {
-  "name": "react-scripts",
+  "name": "@ralphsmith80/react-scripts",
   "version": "2.1.5",
   "description": "Configuration and scripts for Create React App.",
-  "repository": "facebook/create-react-app",
+  "repository": "ralphsmith80/create-react-app",
   "license": "MIT",
   "engines": {
     "node": ">=6"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://github.com/ralphsmith80/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -82,10 +82,5 @@
   "optionalDependencies": {
     "fsevents": "1.2.4"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": [">0.2%", "not dead", "not ie <= 11", "not op_mini all"]
 }
