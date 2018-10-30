@@ -40,7 +40,11 @@
     "dotenv-expand": "4.2.0",
     "eslint": "5.6.0",
     "eslint-config-airbnb": "^17.1.0",
+<<<<<<< HEAD
     "eslint-config-react-app": "^3.0.5",
+=======
+    "eslint-config-react-app": "^3.0.3",
+>>>>>>> 8a1fb27095228e63b28f3de1d0ae6bd2e5f9f3a7
     "eslint-loader": "2.1.1",
     "eslint-plugin-flowtype": "2.50.1",
     "eslint-plugin-import": "2.14.0",
