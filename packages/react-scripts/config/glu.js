@@ -3,6 +3,7 @@
 const webpack = require('webpack');
 
 const alias = {
+  handlebars: 'handlebars/dist/handlebars.min.js',
   backbone: 'backbone.marionette/node_modules/backbone',
 };
 
