@@ -1,6 +1,6 @@
 {
   "name": "@ralphsmith80/react-scripts",
-  "version": "2.1.6-alpha",
+  "version": "2.1.7",
   "description": "Configuration and scripts for Create React App.",
   "repository": "ralphsmith80/create-react-app",
   "license": "MIT",
